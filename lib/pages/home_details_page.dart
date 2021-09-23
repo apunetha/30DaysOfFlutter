@@ -13,7 +13,9 @@ class HomeDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       backgroundColor: MyTheme.creamColor,
       bottomNavigationBar: Container(
         color: Colors.white,
@@ -31,8 +33,8 @@ class HomeDetailsPage extends StatelessWidget {
                         StadiumBorder(),
                       ),
                     ),
-                    child: "Buy".text.make())
-                .wh(100, 50),
+                    child: "Add to cart".text.make())
+                .wh(120, 50),
           ],
         ).p16(),
       ),
@@ -60,8 +62,12 @@ class HomeDetailsPage extends StatelessWidget {
                         .make(),
                     catalog.desc.text.xl.make(),
                     10.heightBox,
+                    "Sadipscing gubergren tempor dolor eirmod justo nonumy consetetur amet sit justo, takimata magna sanctus duo eos labore duo est sadipscing. Ea est lorem sed sit at sit takimata dolor sea. Takimata kasd nonumy elitr no justo takimata labore, gubergren dolor justo rebum sit justo sed. Tempor sea et aliquyam rebum."
+                        .text
+                        .make()
+                        .p16(),
                   ],
-                ).py64(),
+                ).py32(),
               ),
             ))
           ],
