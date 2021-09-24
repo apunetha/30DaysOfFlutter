@@ -36,7 +36,10 @@ class MyTheme {
             color: Colors.white,
           ),
           toolbarTextStyle: Theme.of(context).textTheme.bodyText2,
-          titleTextStyle: Theme.of(context).textTheme.headline6,
+          titleTextStyle: Theme.of(context)
+              .textTheme
+              .headline6
+              ?.copyWith(color: Colors.white),
         ),
       );
 
